@@ -1,32 +1,58 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <main__bar />
+    <v-navigation-drawer
+      app
+      permanent
+      width="80px"
+      mini-variant
+      mini-variant-width="100"
+      class="align-center"
+    >
+      <v-list>
+        <v-list-item class="mb-4" justify-center>
+          <v-btn icon tile class="mx-auto">
+            <v-icon>mdi-menu</v-icon>
+          </v-btn>
+        </v-list-item>
+        <v-list-item v-for="i in drawer__icons" :key="i.name">
+          <v-list-item-content>
+            <v-icon class="mb-1">{{i.icon}}</v-icon>
+            <v-list-item-subtitle class="caption" align="center">{{i.name}}</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import main__bar from "./components/main__bar";
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: "App",
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+    main__bar,
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    drawer: true,
+    drawer__icons: [
+      { name: "Home", icon: "mdi-home" },
+      { name: "Trending", icon: "mdi-fire" },
+      { name: "Subscriptions", icon: "mdi-youtube-subscription" },
+      { name: "Library", icon: "mdi-play-box-multiple" },
+    ],
+    nav__icons: [
+      { name: "Library", icon: "mdi-home" },
+      { name: "History", icon: "mdi-history" },
+      { name: "My videos", icon: "mdi-home" },
+      { name: "Watch later", icon: "mdi-home" },
+    ],
+  }),
+};
+</script>

@@ -1,24 +1,9 @@
 # youtube-clone
 
-## Project setup
+## Technologies used:
+
 ```
-npm install
+VueJS and Vuetify
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+This project is an attempt at cloning the UI of the current version of YouTube with Vue and Vuetify.
