@@ -1,23 +1,23 @@
 <template>
   <v-app :style="{background: '#f3f6fa'}">
     <v-divider></v-divider>
-    <v-system-bar flat color="white" height="48px" justify-space-between>
-      <v-chip class="ma-2" color="error">All</v-chip>
-      <v-chip class="ma-2">Driving tests</v-chip>
-      <v-chip class="ma-2">Chillstep</v-chip>
-      <v-chip class="ma-2">JavaScript</v-chip>
-      <v-chip class="ma-2">Lo-fi music</v-chip>
-      <v-chip class="ma-2">Creepypasta</v-chip>
-      <v-chip class="ma-2">My Hero Academia</v-chip>
-      <v-chip class="ma-2">Computer Science</v-chip>
-      <v-chip class="ma-2">Anime</v-chip>
-      <v-chip class="ma-2">Computer Programming</v-chip>
-    </v-system-bar>
+        <v-system-bar flat color="white" height="48px" justify-space-between>
+          <v-chip class="ma-2" color="error">All</v-chip>
+          <v-chip class="ma-2">Driving tests</v-chip>
+          <v-chip class="ma-2">Chillstep</v-chip>
+          <v-chip class="ma-2">JavaScript</v-chip>
+          <v-chip class="ma-2">Lo-fi music</v-chip>
+          <v-chip class="ma-2">Creepypasta</v-chip>
+          <v-chip class="ma-2">My Hero Academia</v-chip>
+          <v-chip class="ma-2">Computer Science</v-chip>
+          <v-chip class="ma-2">Anime</v-chip>
+          <v-chip class="ma-2">Computer Programming</v-chip>
+        </v-system-bar>
     <v-divider></v-divider>
     <v-container>
-      <v-row>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+      <v-row dense>
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -44,8 +44,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -72,8 +72,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -100,8 +100,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -128,8 +128,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -156,8 +156,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -184,8 +184,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
@@ -212,8 +212,8 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="3">
-          <v-card class="mx-auto" flat max-width="400">
+        <v-col cols="12" xs="12" sm="4" md="3">
+          <v-card class="mx-auto" flat max-width="300">
             <v-img
               class="white--text align-end"
               height="100px"
